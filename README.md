@@ -8,6 +8,7 @@ StreetNow, publié avec GitHub Pages.
 Ce dépôt ne contient **que** des pages publiques, en HTML et CSS statiques :
 
 - `index.html` — page d’accueil minimale (liste des ressources) ;
+- `privacy-policy/index.html` — page « Politique de confidentialité de StreetNow » ;
 - `delete-account/index.html` — page « Supprimer votre compte StreetNow » ;
 - `assets/styles.css` — feuille de style unique (aucune dépendance externe).
 
@@ -29,6 +30,7 @@ Adresse de support affichée sur la page et utilisée par le lien `mailto:` :
 5. Après quelques dizaines de secondes, la page est disponible à :
 
    - accueil : `https://letsfoot.github.io/streetnow-legal/`
+   - politique de confidentialité : `https://letsfoot.github.io/streetnow-legal/privacy-policy/`
    - suppression de compte : `https://letsfoot.github.io/streetnow-legal/delete-account/`
 
 ## Vérification locale
