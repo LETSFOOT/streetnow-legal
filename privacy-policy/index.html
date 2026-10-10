@@ -189,7 +189,24 @@
           <tr>
             <th scope="row">Mapbox</th>
             <td>Affichage de la carte</td>
-            <td>Zone affichée et adresse IP de l’appareil lors du chargement des tuiles de carte</td>
+            <td>
+              Zone affichée et adresse IP de l’appareil lors du chargement des
+              tuiles. Le kit de développement Mapbox transmet en outre des
+              données techniques et de localisation <strong>dé-identifiées et
+              agrégées</strong>, que Mapbox utilise pour améliorer ses propres
+              services. Le bouton d’information affiché sur la carte permet de
+              régler cette télémétrie ; StreetNow n’en contrôle pas le contenu
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Resend</th>
+            <td>Envoi des alertes de modération au responsable désigné</td>
+            <td>
+              Adresse du destinataire désigné, adresse d’expédition et
+              <strong>référence du signalement</strong> avec son niveau
+              d’urgence. <strong>Le contenu signalé n’est jamais transmis</strong> :
+              ni pseudonyme, ni message, ni extrait
+            </td>
           </tr>
           <tr>
             <th scope="row">Google Play (Google)</th>
@@ -203,6 +220,13 @@
       StreetNow n’intègre <strong>aucun outil de publicité ni de mesure
       d’audience</strong>, et ne partage pas vos données à des fins
       publicitaires.
+    </p>
+    <p>
+      Les alertes de modération envoyées par email ne servent qu’à prévenir le
+      responsable désigné qu’un signalement attend : elles contiennent une
+      référence et son urgence, <strong>jamais le contenu signalé</strong>. Le
+      contenu visé n’est ouvert que dans la console de modération, par le
+      responsable dont le compte exige un second facteur d’authentification.
     </p>
     <p class="small muted">
       Les lieux d’hébergement et les éventuels transferts de données hors de
