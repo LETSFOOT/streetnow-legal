@@ -12,8 +12,8 @@
 
   <!--
     Politique de confidentialité publique de StreetNow.
-    Contact : streetnow888@gmail.com
-    Dernière mise à jour : 11 octobre 2026.
+    Contact : contact@streetnow.fr
+    Dernière mise à jour : 14 octobre 2026.
     Aucun JavaScript, aucun cookie, aucun traceur, aucune clé ni donnée privée.
   -->
 
@@ -36,7 +36,7 @@
       protégées et comment exercer vos droits. Elle décrit le fonctionnement
       réel de l’application.
     </p>
-    <p class="small muted">Dernière mise à jour : 11 octobre 2026.</p>
+    <p class="small muted">Dernière mise à jour : 14 octobre 2026.</p>
 
     <nav class="card" aria-label="Sommaire">
       <h2 class="section-title">Sommaire</h2>
@@ -59,11 +59,11 @@
     <p>
       StreetNow est une application mobile qui réunit des joueurs de football
       autour des terrains proches d’eux. Le responsable du traitement des
-      données décrites ici est l’éditeur de StreetNow.
+      données décrites ici est Mohamed Houdaifa Brahmi, éditeur de StreetNow.
     </p>
     <p>
       Pour toute question relative à vos données personnelles :
-      <strong>streetnow888@gmail.com</strong>.
+      <strong>contact@streetnow.fr</strong>.
     </p>
     <p class="muted small">
       StreetNow ne vous demande ni votre nom, ni votre adresse postale, ni votre
@@ -117,7 +117,7 @@
 
     <h3>Notifications</h3>
     <ul>
-      <li>un <strong>jeton d’appareil</strong> (Android, via Firebase Cloud Messaging), pour envoyer les notifications que vous avez autorisées ;</li>
+      <li>un <strong>jeton d’appareil</strong> (Android et iOS, via Firebase Cloud Messaging et, sur iOS, Apple Push Notification service), pour envoyer les notifications que vous avez autorisées ;</li>
       <li>vos <strong>catégories de notifications</strong> et vos <strong>heures silencieuses</strong> ;</li>
       <li>un <strong>journal des notifications</strong> envoyées (clé anti-doublon et horodatage).</li>
     </ul>
@@ -183,8 +183,8 @@
           </tr>
           <tr>
             <th scope="row">Firebase Cloud Messaging (Google)</th>
-            <td>Acheminement des notifications Android</td>
-            <td>Jeton d’appareil, contenu de la notification</td>
+            <td>Acheminement des notifications Android et iOS</td>
+            <td>Jeton et identifiants techniques d’appareil, contenu de la notification, données techniques et de diagnostic du SDK</td>
           </tr>
           <tr>
             <th scope="row">Mapbox</th>
@@ -195,32 +195,28 @@
               données techniques et de localisation <strong>dé-identifiées et
               agrégées</strong>, que Mapbox utilise pour améliorer ses propres
               services. StreetNow ne contrôle pas le contenu de ces
-              transmissions et ne propose pas, dans ses écrans, de réglage de
-              cette télémétrie à ce jour
+              transmissions. Sur iOS, le menu « À propos de cette carte », puis « Télémétrie Mapbox », propose « Arrêter de participer »
             </td>
           </tr>
           <tr>
             <th scope="row">Resend</th>
-            <td>Envoi des alertes de modération au responsable désigné</td>
+            <td>Envoi des emails d’authentification et des alertes de modération au responsable désigné</td>
             <td>
-              Adresse du destinataire désigné, adresse d’expédition et
-              <strong>référence du signalement</strong> avec son niveau
+              Adresse du destinataire, adresse d’expédition et contenu des emails d’authentification (liens de confirmation ou de récupération). Pour les alertes de modération : <strong>référence du signalement</strong> avec son niveau
               d’urgence. <strong>Le contenu signalé n’est jamais transmis</strong> :
               ni pseudonyme, ni message, ni extrait
             </td>
           </tr>
           <tr>
-            <th scope="row">Google Play (Google)</th>
+            <th scope="row">Google Play (Google), App Store et TestFlight (Apple)</th>
             <td>Distribution de l’application</td>
-            <td>Géré par Google, hors application</td>
+            <td>Données gérées par Google ou Apple, selon leur politique de confidentialité</td>
           </tr>
         </tbody>
       </table>
     </div>
     <p>
-      StreetNow n’intègre <strong>aucun outil de publicité ni de mesure
-      d’audience</strong>, et ne partage pas vos données à des fins
-      publicitaires.
+      StreetNow n’intègre <strong>aucune publicité</strong> et ne revend pas les données. Les SDK cartographiques et de notification traitent les données techniques et d’usage décrites ci-dessus.
     </p>
     <p>
       Les alertes de modération envoyées par email ne servent qu’à prévenir le
@@ -230,9 +226,7 @@
       responsable dont le compte exige un second facteur d’authentification.
     </p>
     <p class="small muted">
-      Les lieux d’hébergement et les éventuels transferts de données hors de
-      votre pays dépendent de ces prestataires ; ces points n’ont pas encore été
-      finalisés par l’éditeur.
+      La base principale Supabase est hébergée à Paris (région eu-west-3). Les services Mapbox, Google/Firebase, Apple et Resend peuvent traiter des données dans d’autres régions. Les garanties de transfert et les durées des journaux et sauvegardes de ces prestataires restent à préciser ; aucune durée non vérifiée n’est annoncée ici.
     </p>
 
     <h2 id="securite">5. Comment nous protégeons vos données</h2>
@@ -240,7 +234,7 @@
       <li>les échanges avec les serveurs passent par des connexions chiffrées <strong>HTTPS/TLS</strong> ;</li>
       <li>votre mot de passe est haché par le service d’authentification et n’est jamais accessible à StreetNow ;</li>
       <li>les photos de profil sont conservées dans un <strong>espace privé</strong>, consultées par une <strong>URL signée temporaire</strong>, et leurs métadonnées sont retirées avant l’envoi ;</li>
-      <li>chaque table de données est protégée par des <strong>règles d’accès au niveau des lignes</strong> : un compte ne peut lire que ses propres données ;</li>
+      <li>les <strong>règles d’accès au niveau des lignes</strong> et les fonctions du serveur encadrent l’accès aux données : certaines données sont privées, d’autres sont partagées selon les fonctionnalités (profils, terrains, parties et chats) ;</li>
       <li>les écritures sensibles (présence, parties, chat, notes, votes, modération, suppression de compte) sont décidées par le serveur, pas par l’application ;</li>
       <li>aucune clé d’administration n’est présente dans l’application mobile.</li>
     </ul>
@@ -258,7 +252,7 @@
       Quelques repères factuels :
     </p>
     <ul>
-      <li>les données de compte et de profil sont conservées tant que le compte existe, et supprimées ou anonymisées à la suppression du compte ;</li>
+      <li>les données de compte et de profil sont conservées tant que le compte existe, puis supprimées lors de sa suppression définitive ; les contenus rédigés par le titulaire sont également effacés ;</li>
       <li>un salon de chat de terrain est actif pendant sa journée, puis reste consultable <strong>24 heures</strong> en lecture seule avant un accès restreint à la modération ;</li>
       <li>les journaux tenus par nos prestataires techniques (authentification, distribution) suivent leurs propres durées de conservation.</li>
     </ul>
@@ -279,9 +273,10 @@
     <p>Ce que la suppression entraîne, sans simplification :</p>
     <ul>
       <li><strong>Supprimé</strong> : profil (pseudo, tranche d’âge), photo de profil, terrains favoris, présences et intentions de déplacement, inscriptions aux parties, amis et demandes d’ami, blocages, notes et votes donnés et reçus, distinctions reçues, préférences et journal de notifications, jetons d’appareil, état de modération et compte d’authentification (adresse email et mot de passe inclus).</li>
-      <li><strong>Conservé sans votre identité (anonymisé)</strong> : vos messages du chat des terrains et vos messages privés restent visibles pour les autres joueurs, sans votre pseudo ni votre photo, sous une identité neutre ; vos matchs terminés restent dans l’historique sans votre identité ; les signalements que vous avez envoyés restent dans la file de modération sans votre compte ; les retours « Signaler un problème » que vous avez envoyés restent enregistrés sans aucune identité.</li>
-      <li><strong>Conservé</strong> : les signalements dont vous étiez la cible restent enregistrés comme preuve de modération, la référence à votre compte en étant retirée ; les informations sur les terrains sont des données géographiques publiques et ne sont pas concernées.</li>
+      <li><strong>Contenus rédigés par vous supprimés</strong> : vos messages publics et privés, même masqués auparavant, vos signalements, vos retours « Signaler un problème » et vos propositions de terrains sont effacés lors de la suppression définitive de votre compte. Les contenus rédigés par les autres personnes restent conservés. Les parties partagées peuvent continuer sans votre identité.</li>
+      <li><strong>Conservé</strong> : les signalements dont vous étiez la cible restent enregistrés comme contenus rédigés par d’autres personnes, la référence à votre compte en étant retirée ; les informations sur les terrains sont des données géographiques publiques et ne sont pas concernées.</li>
     </ul>
+    <p class="small muted">La nouvelle règle s’applique aux suppressions définitives effectuées à partir du 14 octobre 2026. Elle ne purge pas rétroactivement les anciens contenus déjà anonymisés, dont l’auteur ne peut plus être rattaché à un compte. Aucune exception de conservation légale des contenus de l’auteur n’est activée sans fondement et durée documentés.</p>
     <p class="small muted">
       Après la suppression, vous ne pouvez plus vous connecter avec cette
       adresse email, et aucune restauration n’est possible.
@@ -292,7 +287,7 @@
       Vous pouvez demander à <strong>consulter</strong>, <strong>corriger</strong>
       ou <strong>supprimer</strong> vos données, et vous opposer à certains
       traitements. Pour exercer ces droits, écrivez à
-      <strong>streetnow888@gmail.com</strong>.
+      <strong>contact@streetnow.fr</strong>.
     </p>
     <ul>
       <li>Suppression : depuis l’application (« Supprimer mon compte ») ou depuis la <a href="../delete-account/">page de suppression de compte</a>.</li>
@@ -348,7 +343,7 @@
       avec un second facteur obligatoire sur son compte. Aucun délai de réponse
       n’est garanti. Si vous êtes parent ou tuteur et que vous pensez qu’un
       mineur utilise StreetNow, écrivez-nous à
-      <strong>streetnow888@gmail.com</strong> : nous traiterons votre demande.
+      <strong>contact@streetnow.fr</strong> : nous traiterons votre demande.
     </p>
 
     <h2 id="modifications">10. Modifications de cette politique</h2>
@@ -362,7 +357,7 @@
     <h2 id="contact">11. Contact</h2>
     <p>
       Pour toute question relative à cette politique ou à vos données
-      personnelles : <strong>streetnow888@gmail.com</strong>.
+      personnelles : <strong>contact@streetnow.fr</strong>.
     </p>
   </main>
 
